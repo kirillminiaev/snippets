@@ -1,0 +1,80 @@
+.naaft-social-share {
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	$iconsize: 30px;
+
+	h2 {
+		font-size: .75em;
+		font-weight: 700;
+		line-height: normal;
+		margin-bottom: 1rem;
+		padding: 0;
+		text-transform: uppercase;
+		color: $color-accent-light;
+	}
+	ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		vertical-align: top;
+
+		li {
+			display: inline-block;
+			width: $iconsize;
+			height: $iconsize;
+			margin: 0;
+			margin-left: 8px;
+			padding: 0;
+			vertical-align: top;
+			text-indent: -9999px;
+			@include transition(transform 100ms ease-in-out);
+
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			&:hover {
+				@include transform(scale(1.4));
+			}
+			&.fb a {
+				background-image: url(images/fb.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+			}
+			&.tw a {
+				background-image: url(images/tw.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+			}
+			&.pt a {
+				background-image: url(images/pt.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+			}
+			&.li a {
+				background-image: url(images/li.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+			}
+			&.gp a {
+				background-image: url(images/gp.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+			}
+			&.email a {
+				background-image: url(images/email.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 100% auto;
+			}
+		}
+	}
+}
